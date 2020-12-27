@@ -1,25 +1,24 @@
 # Online-Book-Shop
 ## Admin panel
 - Login page   
-![Login page](/images/1.jpg)
+![Login page](/images/adminlogin.png)
 
 - Admin dashboard   
-![Admin dashboard](https://prntscr.com/waxj9k)
+![Admin dashboard](/images/admindashboard.png)
 ## User panel
 - Home page   
-![Home page](https://prntscr.com/waxk7u)
-![Home page](https://prntscr.com/waxldw)
+![Home page](/images/home.png)
+![Home page](/images/home2.png)
 - Book detailes   
-![Book detailes](https://prntscr.com/waxoah)
+![Book detailes](/images/bookdetailes.png)
 - Author list   
-![Author list](https://prntscr.com/waxmne)
+![Author list](/images/author.png)
 - User Login   
-![User Login](https://prntscr.com/waxnaj)
+![User Login](/images/userlogin.png)
 - Cart page    
-![Cart page](https://prntscr.com/waxp4q)
+![Cart page](/images/cart.png)
 - Wishlist    
-![Wishlist](https://prntscr.com/waxpoa)
+![Wishlist](/images/wishlist.png)
 - Order   
-[Order](https://prntscr.com/waxqje)
-- Cart page   
-![Cart page](https://prntscr.com/waxp4q)
+[Order](/images/order.png)
+
