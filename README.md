@@ -1,7 +1,7 @@
 # Online-Book-Shop
 ## Admin panel
 - Login page   
-![Login page](https://prntscr.com/waxhoi)
+![Login page] (https://prntscr.com/waxhoi)
 
 - Admin dashboard   
 ![Admin dashboard](https://prntscr.com/waxj9k)
@@ -21,5 +21,5 @@
 ![Wishlist](https://prntscr.com/waxpoa)
 - Order   
 [Order](https://prntscr.com/waxqje)
-- Cart page
+- Cart page   
 ![Cart page](https://prntscr.com/waxp4q)
