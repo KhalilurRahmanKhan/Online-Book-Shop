@@ -1,7 +1,7 @@
 # Online-Book-Shop
 ## Admin panel
 - Login page   
-![Login page] (https://prntscr.com/waxhoi)
+![Login page](C:\Users\khali\Desktop\temporary\Screenshot 2020-12-27 231310.png)
 
 - Admin dashboard   
 ![Admin dashboard](https://prntscr.com/waxj9k)
