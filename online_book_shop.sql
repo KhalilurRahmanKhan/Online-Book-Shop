@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2021 at 02:39 PM
+-- Generation Time: Mar 04, 2021 at 01:39 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -66,17 +66,14 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`book_id`, `category_id`, `book_name`, `image`, `author`, `publishing_year`, `price`, `quantity`, `title`, `description`, `status`) VALUES
-(19, 13, 'book 1', '2017_06_20_00_03_14_87b6c6e0-93f5-41eb-ae68-7dc1aed816d8_bookleftalign.png', 'author 1', 2011, 100, 5, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(20, 14, 'book 2', '251w-CejxvxrTCyg.webp', 'author 2', 2012, 150, 10, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(21, 15, 'book 3', 'modern-book-cover-page-brochure-design_1017-12732.jpg', 'author 3', 2013, 200, 4, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(22, 16, 'book 4', 'Enchantment-Book-Cover-Best-Seller1.jpg', 'author 4', 2014, 200, 5, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(23, 18, 'book 5', 'xd3s-design-book-covers.jpg.pagespeed.ic.kxf_yj5jTN.webp', 'author 5', 2015, 150, 10, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(24, 18, 'book 6', '001-book-brand-cover-back-presentation-mockup-psd.jpg', 'author 5', 2015, 200, 5, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \\\"de Finibus Bonorum et Malorum\\\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \\\"Lorem ipsum dolor sit amet..\\\", comes from a line in section 1.10.32.', 1),
-(25, 14, 'book 7', '2016_02_12_00_05_05_910db405-6bd4-4a5d-bce7-c2e3135dc5e6_449070_WAntoneta_55908c_killing.png', 'author 2', 2011, 47, 4, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(26, 16, 'book 8', '1200px-Book_stub_img.svg.png', 'author 1', 2011, 100, 5, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(27, 15, 'Book 9', '1200px-Book_stub_img.svg.png', 'author 1', 2013, 200, 10, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(28, 13, 'book 10', '6a7d92494ee4_130867.jpg', 'author 5', 2011, 150, 4, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1),
-(29, 15, 'Book 11', 'aa7bb8523_199748.jpg', 'author 2', 2013, 100, 4, 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.', 1);
+(30, 24, 'Snake Of Fortune', '1_no4pKR0.jpg', 'Alexandra', 2010, 100, 10, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. ', 1),
+(31, 22, 'Raven Of Greatness', '550-2EXfVq1535745486.jpg', 'Bernadette', 2011, 200, 5, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. ', 1),
+(32, 23, 'Spider Without Glory', '2017_06_20_00_03_14_87b6c6e0-93f5-41eb-ae68-7dc1aed816d8_bookleftalign.png', 'Elizabeth', 2012, 200, 10, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. ', 1),
+(33, 21, 'Thieves With Strength', 'a4aac1f3d86869bcfd2833e8be768014.jpg', 'Jennifer', 2013, 100, 3, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. ', 1),
+(34, 25, 'Bandits Of Dusk', 'action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg', 'Jonathan', 2014, 200, 10, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. ', 1),
+(35, 24, 'Traitors And Lions', 'bbcjuly19verynice.jpg', 'Bernadette', 2014, 100, 5, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. ', 1),
+(36, 23, 'Girls And Officers', 'contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf_screen.jpg', 'Jennifer', 2010, 100, 2, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. ', 1),
+(37, 25, 'Hope Of Stone', 'design-for-writers-book-cover-tf-2-a-million-to-one.jpg', 'Jonathan', 2012, 500, 0, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. ', 1);
 
 -- --------------------------------------------------------
 
@@ -103,8 +100,42 @@ CREATE TABLE `book_order` (
 --
 
 INSERT INTO `book_order` (`order_id`, `user_id`, `book_id`, `category_id`, `quantity`, `name`, `address`, `phone`, `email`, `status`, `time`) VALUES
-(165, 3, 29, 13, 3, 'name', 'address', 1234567, 'user@test.com', 0, '2021-01-06 14:02:28'),
-(167, 3, 25, 14, 3, 'name', 'address', 1234567, 'user@test.com', 0, '2021-01-06 14:02:32');
+(450, 4, 37, 25, 1, 'name', 'address', 123456666, 'user@test.com', 1, '2021-01-17 11:17:57'),
+(451, 4, 33, 21, 2, 'name', 'address', 123456666, 'user@test.com', 1, '2021-01-17 11:21:21'),
+(452, 4, 36, 0, 1, 'name', 'address', 1234567, 'user@test.com', 1, '2021-01-17 11:21:22'),
+(453, 4, 37, 0, 1, 'name', 'address', 1234567, 'user@test.com', 1, '2021-01-17 11:21:22'),
+(454, 4, 37, 25, 2, 'name', 'address', 1234567, 'user@test.com', 1, '2021-01-17 11:21:23'),
+(455, 4, 37, 25, 1, 'name', 'address', 1234567, 'user@test.com', 1, '2021-01-17 11:21:24'),
+(456, 4, 36, 23, 2, 'name', 'address', 1234567, 'user@test.com', 0, '2021-01-17 11:21:47');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `book_order_bkash`
+--
+
+CREATE TABLE `book_order_bkash` (
+  `id` int(255) NOT NULL,
+  `user_id` int(255) NOT NULL,
+  `book_id` int(255) NOT NULL,
+  `category_id` int(255) NOT NULL,
+  `quantity` int(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `phone` int(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `bkash_num` int(255) NOT NULL,
+  `tran_id` int(255) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `book_order_bkash`
+--
+
+INSERT INTO `book_order_bkash` (`id`, `user_id`, `book_id`, `category_id`, `quantity`, `name`, `address`, `phone`, `email`, `bkash_num`, `tran_id`, `status`, `time`) VALUES
+(5, 4, 35, 24, 1, 'name', 'address', 1234567, 'user@test.com', 1234567, 123456, 0, '2021-01-17 08:11:14');
 
 -- --------------------------------------------------------
 
@@ -123,9 +154,11 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`category_id`, `category_name`, `status`) VALUES
-(13, 'category 1', 1),
-(14, 'category 2', 1),
-(15, 'category 3', 1);
+(21, 'Horror', 1),
+(22, 'Comedy', 1),
+(23, 'Historical', 1),
+(24, 'Adventure', 1),
+(25, 'Science', 1);
 
 -- --------------------------------------------------------
 
@@ -141,6 +174,13 @@ CREATE TABLE `contact` (
   `comment` text NOT NULL,
   `time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`contact_id`, `name`, `email`, `phone`, `comment`, `time`) VALUES
+(3, 'name', 'user@test.com', 1234567, 'comment', '2021-01-17 08:13:14');
 
 -- --------------------------------------------------------
 
@@ -162,7 +202,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `join_time`) VALUES
-(3, 'user', 'user@test.com', 198765433, 'user', '');
+(4, 'user', 'user@test.com', 1234567, 'user', '');
 
 -- --------------------------------------------------------
 
@@ -180,6 +220,14 @@ CREATE TABLE `wishlist` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `wishlist`
+--
+
+INSERT INTO `wishlist` (`wishlist_id`, `user_id`, `book_id`, `book_name`, `image`, `price`) VALUES
+(26, 4, 36, 'Girls And Officers', 'contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf_screen.jpg', 100),
+(27, 4, 35, 'Traitors And Lions', 'bbcjuly19verynice.jpg', 100);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -194,6 +242,12 @@ ALTER TABLE `book`
 --
 ALTER TABLE `book_order`
   ADD PRIMARY KEY (`order_id`);
+
+--
+-- Indexes for table `book_order_bkash`
+--
+ALTER TABLE `book_order_bkash`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `category`
@@ -227,37 +281,43 @@ ALTER TABLE `wishlist`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `book_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `book_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `book_order`
 --
 ALTER TABLE `book_order`
-  MODIFY `order_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=168;
+  MODIFY `order_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=457;
+
+--
+-- AUTO_INCREMENT for table `book_order_bkash`
+--
+ALTER TABLE `book_order_bkash`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `category_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `category_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `contact_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `contact_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `wishlist_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `wishlist_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
