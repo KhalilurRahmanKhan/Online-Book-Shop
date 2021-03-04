@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 27, 2020 at 08:51 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- Generation Time: Jan 07, 2021 at 02:39 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -88,6 +88,7 @@ CREATE TABLE `book_order` (
   `order_id` int(255) NOT NULL,
   `user_id` int(255) NOT NULL,
   `book_id` int(255) NOT NULL,
+  `category_id` int(255) NOT NULL,
   `quantity` int(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
@@ -101,8 +102,9 @@ CREATE TABLE `book_order` (
 -- Dumping data for table `book_order`
 --
 
-INSERT INTO `book_order` (`order_id`, `user_id`, `book_id`, `quantity`, `name`, `address`, `phone`, `email`, `status`, `time`) VALUES
-(123, 3, 28, 2, 'admin', 'wdegfrhyj', 2345678, 'test@email.com', 1, '2020-12-26 05:31:50');
+INSERT INTO `book_order` (`order_id`, `user_id`, `book_id`, `category_id`, `quantity`, `name`, `address`, `phone`, `email`, `status`, `time`) VALUES
+(165, 3, 29, 13, 3, 'name', 'address', 1234567, 'user@test.com', 0, '2021-01-06 14:02:28'),
+(167, 3, 25, 14, 3, 'name', 'address', 1234567, 'user@test.com', 0, '2021-01-06 14:02:32');
 
 -- --------------------------------------------------------
 
@@ -123,9 +125,7 @@ CREATE TABLE `category` (
 INSERT INTO `category` (`category_id`, `category_name`, `status`) VALUES
 (13, 'category 1', 1),
 (14, 'category 2', 1),
-(15, 'category 3', 1),
-(16, 'category 4', 1),
-(18, 'category 5', 1);
+(15, 'category 3', 1);
 
 -- --------------------------------------------------------
 
@@ -178,13 +178,6 @@ CREATE TABLE `wishlist` (
   `image` varchar(255) NOT NULL,
   `price` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `wishlist`
---
-
-INSERT INTO `wishlist` (`wishlist_id`, `user_id`, `book_id`, `book_name`, `image`, `price`) VALUES
-(3, 3, 0, 'book 10', '6a7d92494ee4_130867.jpg', 150);
 
 --
 -- Indexes for dumped tables
@@ -240,7 +233,7 @@ ALTER TABLE `book`
 -- AUTO_INCREMENT for table `book_order`
 --
 ALTER TABLE `book_order`
-  MODIFY `order_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+  MODIFY `order_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=168;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -264,7 +257,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `wishlist_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `wishlist_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

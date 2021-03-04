@@ -46,7 +46,7 @@ if(isset($_GET['book_id']) && $_GET['book_id']!=''){
 		<?php 
 			$count=$row['quantity'];
 		if($count>0){
-			echo "Availablity: Available"; 
+			echo "Availablity: Available ($count)"; 
 
 		}
 		?>
@@ -81,7 +81,8 @@ if(isset($_POST['cart'])){
 			$count=count($_SESSION['cart']);
 			$item_array=array(
 				'book_id'=>$_POST['book_id'],
-				'quantity'=>$_POST['quantity']
+				'category_id'=>$_POST['category_id'],
+				'quantity'=>$_POST['quantity'],
 
 			);
 			$_SESSION['cart'][$count]=$item_array;
@@ -94,7 +95,9 @@ if(isset($_POST['cart'])){
 		
 		$item_array=array(
 			'book_id'=>$_POST['book_id'],
-			'quantity'=>$_POST['quantity']
+			'category_id'=>$_POST['category_id'],
+			'quantity'=>$_POST['quantity'],
+
 
 		);
 		$_SESSION['cart'][0]=$item_array;
@@ -132,14 +135,17 @@ if(isset($_POST['cart'])){
 	if(isset($_POST['wishlist'])){
 	
 		$user_id=mysqli_real_escape_string($con,$_POST['user_id']);
+		$book_id=mysqli_real_escape_string($con,$_GET['book_id']);
+
 		$book_name=mysqli_real_escape_string($con,$_POST['book_name']);
 		$image=mysqli_real_escape_string($con,$_POST['image']);
 		$price=mysqli_real_escape_string($con,$_POST['price']);
 
 	
 		
-		mysqli_query($con,"insert into wishlist(user_id,book_name,image,price) values('$user_id','$book_name','$image','$price')");
+		mysqli_query($con,"insert into wishlist(user_id,book_id,book_name,image,price) values('$user_id','$book_id','$book_name','$image','$price')");
 		
+		header('Location: '.$_SERVER['REQUEST_URI']);
 
 
 	}
@@ -153,8 +159,16 @@ if(isset($_POST['cart'])){
 
 		echo $book_id ;
 		}
+		?>">
+		 <input type="hidden" name="category_id" value="
+		<?php 
+		if(isset($_GET['category_id']) && $_GET['category_id']!=''){
+		$category_id=mysqli_real_escape_string($con,$_GET['category_id']);
+
+		echo $category_id ;
+		}
 		?>">	
-		      <input type="number" name="quantity"  min="1" value="1"  style="width:50px;">
+		    <input type="number" name="quantity"  min="1" max="<?php echo $count; ?>" value="1"  style="width:50px;">
 
 			<button type="submit" name="cart" class="btn btn-primary">Add to cart</button>
 
@@ -175,7 +189,7 @@ else{ ?>
 		echo $book_id ;
 		}
 		?>">
-		      <input type="number" name="quantity"  min="1" value="1"  style="width:50px;">
+		      <input type="number" name="quantity" min="1" max="<?php echo $count; ?>" value="1"  style="width:50px;">
 
 		<button type="submit" name="cart" class="btn btn-primary">Add to cart</button>
 

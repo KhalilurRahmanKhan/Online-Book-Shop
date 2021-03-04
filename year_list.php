@@ -6,25 +6,20 @@
 ?>
 
 
-<br><br>
-<div class="container">
 
+
+<div class="container"style="width:53%;  margin:20px auto; background-color: #E9ECEF; padding:30px; text-align:cener;">
 <?php 
  while($row=mysqli_fetch_assoc($result)){ ?>
 
-    <a href="year.php?year=<?php echo $row['publishing_year']?>"><div style="
-    height: 53px;
-    width: 30%;
-    float: left;
-    background-color: #E9ECC8;
-    text-align: center;
-    border:2px solid #E9EB6E"><?php echo $row['publishing_year']; ?></div></a>
-
+    <a href="year.php?year=<?php echo $row['publishing_year']?>" style="    font-size: 40px;
+    margin: 10px;
+    padding: 10px;"><?php echo $row['publishing_year']; ?></a>
     
-
+ 
+   
 <?php }
 ?>
-  <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
 
 </div>
 

@@ -1,6 +1,7 @@
 <?php require 'header.php'?>
 
 
+
 <?php
 //Delete from cart
 if(isset($_SESSION['cart'])){
@@ -30,21 +31,17 @@ if(isset($_SESSION['cart'])){
 if(isset($_GET['msg'])){
   $msg=mysqli_real_escape_string($con,$_GET['msg']);
   if($msg=='add'){
-echo "Add something to cart";
+    echo '<script>alert("Add something to cart")</script>'; 
+
   }
   else{
-    echo "Login to order";
+    echo '<script>alert("Login to order")</script>'; 
+
+    
 
   }
 
 }
-
-
-
-
-
-
-
 
 ?>
 
@@ -138,7 +135,7 @@ echo "<h4>Total: $total</h4>";
   
     $count=count($_SESSION['cart']);
     if($count>0){
-     echo "order.php";
+     echo "orderoption.php";
     }
   }
   else{

@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
 
-<div class="container"  style="width:40%; margin-top:110px;">
+<div class="container"  style="width:40%; margin-top:110px; background-color: #E9ECEF; padding:30px;">
 <form method="post">
 <div class="form-group">
     <label for="admin_name">Admin name</label>

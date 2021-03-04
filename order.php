@@ -1,4 +1,9 @@
 <?php require 'header.php'?>
+<?php 
+if(!isset($_SESSION['user_login'])){
+    die(header("location: 404.php"));
+}
+?>
 <?php
 if(isset($_POST['submit'])){
 	$user_id=mysqli_real_escape_string($con,$_POST['user_id']);
@@ -14,28 +19,34 @@ if(isset($_POST['submit'])){
         $quantity=array_column($_SESSION['cart'],"quantity");
 
       
-        $book_id=array_column($_SESSION['cart'],"book_id");          
-       foreach($book_id as $id){
-        foreach($quantity as $qty){
+        $book_id=array_column($_SESSION['cart'],"book_id");   
+        $category_id=array_column($_SESSION['cart'],"category_id");   
 
-
-   mysqli_query($con,"insert into book_order(user_id,book_id,quantity,name,address,email,phone,status) values('$user_id','$id','$qty','$name','$address','$email','$phone','0')");
+        
+        
    
-        }
-       }
+     
+     for ($i = 0; $i < count($book_id); $i++) {
+       $id=$book_id[$i];
+       $qty=$quantity[$i];
+       $cid=$category_id[$i];
 
+
+       mysqli_query($con,"insert into book_order(user_id,book_id,category_id,name,quantity,address,email,phone,status) values('$user_id','$id','$cid','$name','$qty','$address','$email','$phone','0')");
+
+       
+       $r= mysqli_fetch_assoc(mysqli_query($con,"select * from book where book_id='$id'"));
+       $q=$r['quantity']-$qty;
+       mysqli_query($con,"update book set quantity='$q' where book_id='$id'");
+
+  }
+
+
+ 
 
     }
 
 
-    mysqli_query($con,"delete from book_order
-       where order_id not in (
-          select max(order_id)
-            from book_order
-          group by book_id)");
-      
-    
-    
     
     
     
@@ -47,7 +58,7 @@ if(isset($_POST['submit'])){
              
            unset($_SESSION['cart']); 
 
-           header("Location: myorder.php");
+         header("Location: myorder.php");
               
        
           
@@ -56,8 +67,8 @@ if(isset($_POST['submit'])){
 ?>
 
 <br>
-<div class="container">
-<center><h1>Fill up the detailes to complete the order</h1></center>
+<div class="container" style="width:70%; margin:10px auto; background-color: #E9ECEF; padding:30px;">
+<center><h4>Fill up the detailes to complete the order</h4></center>
 <form method="post">
 
   <label for="name" class="form-label">Name</label>
@@ -70,7 +81,7 @@ if(isset($_POST['submit'])){
   <input type="email" class="form-control"  name="email" placeholder="Enter your e-mail" required>
 
   <label for="phone" class="form-label">Phone</label>
-  <input type="number" class="form-control"  name="phone" placeholder="Enter your phone" required>
+  <input type="number" min="0" class="form-control"  name="phone" placeholder="Enter your phone" required>
 
 
   <input type="hidden" class="form-control"  name="user_id" value="<?php  
@@ -82,6 +93,7 @@ if(isset($_POST['submit'])){
     
    }
   ?>" required>
+
   <input type="hidden" class="form-control"  name="book_id" value="<?php
        if(isset( $_SESSION['cart'])){
         $book_id=array_column($_SESSION['cart'],"book_id");            
@@ -93,6 +105,20 @@ if(isset($_POST['submit'])){
         
        }
   ?>" required>
+  
+    <input type="hidden" class="form-control"  name="category_id" value="<?php
+       if(isset( $_SESSION['cart'])){
+        $category_id=array_column($_SESSION['cart'],"category_id");            
+         foreach($category_id as $cid){
+             echo "$cid"."<br>";
+         }
+
+        
+        
+       }
+  ?>" required>
+
+  
   <input type="hidden" class="form-control"  name="quantity" value="<?php
      if(isset( $_SESSION['cart'])){
         $quantity=array_column($_SESSION['cart'],"quantity");            
@@ -104,6 +130,8 @@ if(isset($_POST['submit'])){
         
        }
   ?>" required>
+  
+  
 
 
   <br>

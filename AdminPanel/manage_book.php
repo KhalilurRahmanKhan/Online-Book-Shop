@@ -144,14 +144,14 @@ if(isset($_POST['submit'])){
     <input type="text" name="book_name" class="form-control"  required value="<?php echo $book_name; ?>"> 
     <label for="author">Author</label>
     <input type="text" name="author" class="form-control"  required value="<?php echo $author; ?>"> 
-    <label for="publishing_year">Year</label>
+    <label for="publishing_year">Year of edition</label>
     <input type="text" name="publishing_year" class="form-control"  required value="<?php echo $publishing_year; ?>"> 
     <label for="image">Image</label>
     <input type="file" name="image" class="form-control"  <?php echo $img_required; ?>> 
     <label for="price">Price</label>
-    <input type="text" name="price" class="form-control"  required value="<?php echo $price; ?>"> 
+    <input type="number" min="0" name="price" class="form-control"  required value="<?php echo $price; ?>"> 
     <label for="quantity">Quantity</label>
-    <input type="text" name="quantity" class="form-control"  required value="<?php echo $quantity; ?>"> 
+    <input type="number" min="1"  name="quantity" class="form-control"  required value="<?php echo $quantity; ?>"> 
     <label for="title">Title</label>
     <input type="text" name="title" class="form-control"  required value="<?php echo $title; ?>"> 
     <label for="description">Description</label>

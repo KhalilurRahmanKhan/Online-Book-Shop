@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
 
 
 
-<div class="container">
+<div class="container"style="width:40%; margin-top:10px; background-color: #E9ECEF; padding:30px;">
 <form method="post">
 
   

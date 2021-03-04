@@ -5,9 +5,9 @@
 		 
 ?>
 
-<br><br><br>
 
-<div class="container">
+
+<div class="container"style="width:70%; margin:10px auto; background-color: #E9ECEF; padding:30px;">
 <ul class="list-group">
 <?php 
  while($row=mysqli_fetch_assoc($result)){ ?>
@@ -39,7 +39,6 @@
 
 
 
-<br><br><br>
 
 
 

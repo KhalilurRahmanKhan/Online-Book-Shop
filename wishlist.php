@@ -1,6 +1,10 @@
 <?php require 'header.php'?>
 
-
+<?php 
+if(!isset($_SESSION['user_login'])){
+    die(header("location: 404.php"));
+}
+?>
 
 <?php
 
@@ -18,7 +22,8 @@ if($type=="delete"){
   mysqli_query($con,$delete_sql);
 
     }
-  
+    header('Location: wishlist.php');
+
 }
   
 

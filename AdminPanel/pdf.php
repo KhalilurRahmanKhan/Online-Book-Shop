@@ -1,6 +1,5 @@
 <?php require 'include/connection.inc.php'?>
 
-
 <?php
 
 

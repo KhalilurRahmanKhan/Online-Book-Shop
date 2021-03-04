@@ -24,7 +24,7 @@ if(!isset($_SESSION['admin_login']) && $_SESSION['admin_login']==''){
 <body>
 
 
-<nav class="navbar navbar-dark bg-dark " style="position:fixed; width:100%;">
+<nav class="navbar navbar-dark bg-dark " style="position:fixed; width:100%; z-index:50;">
   <span class="navbar-brand mb-0 h1">Admin Panel</span>
   <span class="navbar-text">
       Welcome <?php  echo $_SESSION['admin_name']?>
@@ -44,7 +44,7 @@ if(!isset($_SESSION['admin_login']) && $_SESSION['admin_login']==''){
   <a class="nav-link" href="user.php">User</a>
   <a class="nav-link " href="contact.php">Contact</a>
 
-  <br><br><br> <br><br><br> <br><br><br> <br><br><br> 
+  <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br>
 
   
  <a href="logout.php"> <button type="button"  class="btn btn-secondary btn-sm">Log out</button> </a>

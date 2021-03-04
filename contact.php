@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
 
 
 
-<div class="container">
+<div class="container" style="width:40%; margin-top:10px; background-color: #E9ECEF; padding:30px;">
 <form method="post">
 
   <label for="name" class="form-label">Name</label>
@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
   <input type="email" class="form-control"  name="email" placeholder="Enter your e-mail" required>
 
   <label for="phone" class="form-label">Phone</label>
-  <input type="number" class="form-control"  name="phone" placeholder="Enter your phone" required>
+  <input type="text" class="form-control"  name="phone" placeholder="Enter your phone" required>
 
   <label for="comment" class="form-label">Comment</label>
   <textarea  class="form-control"  name="comment" rows="3" required></textarea>

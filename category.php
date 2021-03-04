@@ -57,7 +57,7 @@ if($check>0){
 			<div class="card-body">
 			  <h5 class="card-title"><?php echo $row['book_name'] ?></h5>
 			  <p class="card-text"><?php echo $row['title'] ?></p>
-			  <a href="book.php?book_id=<?php echo $row['book_id'] ?>" class="btn btn-primary">Details</a>
+			  <a href="book.php?book_id=<?php echo $row['book_id'] ?>&category_id=<?php echo $row['category_id'] ?>" class="btn btn-primary">Details</a>
 			</div>
 		  </div>
 		</div>

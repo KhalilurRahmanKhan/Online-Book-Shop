@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
 
 
 
-<div class="container">
+<div class="container" style="width:40%; margin-top:10px; background-color: #E9ECEF; padding:30px;">
 <form method="post">
 
   <label for="user_name" class="form-label">Name</label>
@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
   <input type="email" class="form-control"  name="email" placeholder="Enter your e-mail" required>
 
   <label for="phone" class="form-label">Phone</label>
-  <input type="number" class="form-control"  name="phone" placeholder="Enter your phone" required>
+  <input type="number" min="0" class="form-control"  name="phone" placeholder="Enter your phone" required>
 
   <label for="password" class="form-label">Password</label>
   <input type="password" class="form-control"  name="password" placeholder="Enter your password" required>

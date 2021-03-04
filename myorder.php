@@ -1,5 +1,9 @@
 <?php require 'header.php'?>
-
+<?php 
+if(!isset($_SESSION['user_login'])){
+    die(header("location: 404.php"));
+}
+?>
 <?php
 if(isset( $_SESSION['user_login'])){
     $email=$_SESSION['email'];
@@ -16,7 +20,8 @@ if(isset( $_SESSION['user_login'])){
 
 <div class="container"  style="width: 70%;" style="float:right;">
 
-<h1>My order</h1>
+<h1>Cash on delivery</h1> 
+<a href="myorder_bkash.php"><h4 style="float:right">Ordered by bkash</h4></a>
 
 
 <table class="table">

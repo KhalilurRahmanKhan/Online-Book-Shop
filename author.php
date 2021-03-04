@@ -10,7 +10,7 @@ if(isset($_GET['author']) && $_GET['author']!=''){
 ?>
 
 
-<div class="container">
+<div class="container" >
 	<hr><hr>
     <center><h4>Book by <?php echo $row['author'] ?></h4></center>
 
@@ -25,7 +25,7 @@ if(isset($_GET['author']) && $_GET['author']!=''){
 			<div class="card-body">
 			  <h5 class="card-title"><?php echo $row['book_name'] ?></h5>
 			  <p class="card-text"><?php echo $row['title'] ?></p>
-			  <a href="book.php?book_id=<?php echo $row['book_id'] ?>" class="btn btn-primary">Details</a>
+			  <a href="book.php?book_id=<?php echo $row['book_id'] ?>&category_id=<?php echo $row['category_id'] ?>" class="btn btn-primary">Details</a>
 			</div>
 		  </div>
 		</div>

@@ -47,7 +47,8 @@ $result=mysqli_query($con,$sql);
 
 <div class="container"  style="width: 70%;" style="float:right;">
 
-<h1>Order</h1>
+<h1>Cash on delivery</h1>
+<a href="order_bkash.php" style="float:right"><h3>Payment on bkash</h3></a>
 
 <br>
 
@@ -77,7 +78,12 @@ $result=mysqli_query($con,$sql);
       <td scope="col"><?php echo "<a href='order_detailes.php?user_id=".$row['user_id']."'>".$row['user_id']."</a>" ;?></td>
       <td scope="col"><?php echo $row['book_id']; ?></td>
       <td scope="col"><?php echo $row['quantity']; ?></td>
-      <td scope="col"><?php echo "price" ?></td>
+      <td scope="col"><?php 
+         $book_id=$row['book_id'];
+        $sql="select * from book where book_id=$book_id";
+
+        $res=mysqli_fetch_assoc(mysqli_query($con,$sql));
+      echo $res['price']; ?></td>
       <td scope="col"><?php echo "name" ?></td>
 
       <td scope="col"><?php echo $row['address']; ?></td>
